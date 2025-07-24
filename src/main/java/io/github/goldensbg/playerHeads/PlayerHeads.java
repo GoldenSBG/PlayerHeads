@@ -14,7 +14,7 @@ import static org.bukkit.Bukkit.getPluginManager;
 
 public final class PlayerHeads extends JavaPlugin {
 
-    public static final String RESOURCE_PACK = "https://github.com/GoldenSBG/PlayerHeads/raw/master/PlayerHeads%20ResourcePack.zip\n";
+    public static final String RESOURCE_PACK = "https://github.com/GoldenSBG/PlayerHeads/raw/main/PlayerHeads%20ResourcePack.zip\n";
     private Config config;
 
     @Override
