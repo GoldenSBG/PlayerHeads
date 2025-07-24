@@ -1,0 +1,7 @@
+name: PlayerHeads
+version: '1.0.1'
+main: io.github.goldensbg.playerHeads.PlayerHeads
+api-version: '1.21'
+authors: Golden_SBG
+website: https://dsc.gg/golden_sbg
+softdepend: [PlaceholderAPI]

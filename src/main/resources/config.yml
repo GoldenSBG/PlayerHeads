@@ -1,0 +1,19 @@
+# Which skin source to use (MOJANG, CRAFATAR or MCHEADS). Default is MOJANG.
+skin-source: MOJANG
+# Whether the resource pack will be automatically downloaded and applied for every player.
+auto-download-pack: true
+# Should the server be treated as running in online mode.
+online-mode: true
+# Whether to display the player head with its hat overlay.
+enable-skin-overlay: true
+# Should join messages include the player head.
+enable-join-messages: true
+# Should leave messages include the player head.
+enable-leave-messages: true
+# Should chat messages include the player head.
+enable-chat-messages: true
+# Should death messages include the player head.
+enable-death-messages: true
+# Delay (in seconds) before join messages are broadcast.
+# This helps ensure that textures have loaded. Default is 3.
+join-messages-delay-seconds: 3
