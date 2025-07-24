@@ -120,11 +120,11 @@ public void onEnable() {
 The API now uses caching internally. The default skin source is automatically selected from your configuration (`skin-source`), but you can also specify your own source if desired.
 #### Examples
 ``` java
-// Get a player's head (with skin overlay) as a BaseComponent[] (cached for 5 minutes)
-BaseComponent[] headComponents = PlayerHeadsAPI.getInstance().getHead(player);
+// Get a player's head (with skin overlay) as a Component (cached for 5 minutes)
+Component headComponents = PlayerHeadsAPI.getInstance().getHead(player);
 
 // Get a player's head without the overlay:
-BaseComponent[] headComponentsNoOverlay = PlayerHeadsAPI.getInstance().getHead(player, false);
+Component headComponentsNoOverlay = PlayerHeadsAPI.getInstance().getHead(player, false);
 
 // Get a player's head as a legacy formatted String:
 String headString = PlayerHeadsAPI.getInstance().getHeadAsString(player);
