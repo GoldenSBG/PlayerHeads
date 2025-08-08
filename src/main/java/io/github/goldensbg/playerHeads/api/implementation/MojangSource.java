@@ -3,7 +3,6 @@ package io.github.goldensbg.playerHeads.api.implementation;
 import io.github.goldensbg.playerHeads.api.SkinSource;
 import io.github.goldensbg.playerHeads.api.SkinSourceEnum;
 import net.kyori.adventure.text.Component;
-import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.OfflinePlayer;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,9 +30,9 @@ public class MojangSource extends SkinSource {
     public Component getHead(OfflinePlayer player, boolean overlay) {
 
         if (useUUIDWhenRetrieve()) {
-            return toBaseComponent(getPixelColorsFromSkin(getPlayerSkinFromMojang(player.getUniqueId().toString()), overlay));
+            return toComponent(getPixelColorsFromSkin(getPlayerSkinFromMojang(player.getUniqueId().toString()), overlay));
         } else {
-            return toBaseComponent(getPixelColorsFromSkin(getPlayerSkinFromMojang(getUUIDFromName(player)), overlay));
+            return toComponent(getPixelColorsFromSkin(getPlayerSkinFromMojang(getUUIDFromName(player)), overlay));
         }
 
     }

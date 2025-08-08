@@ -45,7 +45,7 @@ public class CrafatarSource extends SkinSource {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return toBaseComponent(colors);
+        return toComponent(colors);
 
     }
 

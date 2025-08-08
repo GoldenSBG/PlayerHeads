@@ -90,10 +90,5 @@
             <artifactId>json</artifactId>
             <version>20250517</version>
         </dependency>
-        <dependency>
-            <groupId>net.md-5</groupId>
-            <artifactId>bungeecord-chat</artifactId>
-            <version>1.21-R0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 </project>

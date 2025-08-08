@@ -3,7 +3,6 @@ package io.github.goldensbg.playerHeads.api.implementation;
 import io.github.goldensbg.playerHeads.api.SkinSource;
 import io.github.goldensbg.playerHeads.api.SkinSourceEnum;
 import net.kyori.adventure.text.Component;
-import net.md_5.bungee.api.chat.BaseComponent;
 import org.bukkit.OfflinePlayer;
 
 import javax.imageio.ImageIO;
@@ -44,7 +43,7 @@ public class McHeadsSource extends SkinSource {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return toBaseComponent(colors);
+        return toComponent(colors);
 
     }
 

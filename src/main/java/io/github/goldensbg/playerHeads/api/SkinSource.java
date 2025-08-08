@@ -3,10 +3,6 @@ package io.github.goldensbg.playerHeads.api;
 import lombok.Getter;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
-import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.chat.BaseComponent;
-import net.md_5.bungee.api.chat.ComponentBuilder;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.OfflinePlayer;
 
 import javax.imageio.ImageIO;
@@ -38,7 +34,7 @@ public abstract class SkinSource {
 
     abstract public Component getHead(OfflinePlayer player, boolean overlay);
 
-    public Component toBaseComponent(String[] hexColors) {
+    public Component toComponent(String[] hexColors) {
         if (hexColors == null || hexColors.length < 64) {
             throw new IllegalArgumentException("Hex colors must have at least 64 elements.");
         }
@@ -64,8 +60,6 @@ public abstract class SkinSource {
             parts.add(pixel);
         }
 
-        // Optional: Font setzen (wenn du ein eigenes Font-Pack nutzt)
-        // Du kannst dies weglassen oder nur setzen, wenn du spezielle Minecraft-Fonts brauchst.
         Component full = Component.join(Component.empty(), parts);
         return full;
 

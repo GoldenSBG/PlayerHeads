@@ -31,6 +31,9 @@ public class PlayerListener implements Listener {
         PlayerHeadsAPI.getInstance().getHead(event.getPlayer());
     }
 
+
+    //ToDo add the new Resourcepack with the spacings
+
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         if (plugin.getPluginConfig().getAutoDownloadPackEnabled() && plugin.getServer().getResourcePack().isEmpty())
